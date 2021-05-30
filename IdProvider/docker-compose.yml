@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  idprovider:
+    image: ${DOCKER_REGISTRY-}idprovider
+    build:
+      context: .
+      dockerfile: Dockerfile
+  
